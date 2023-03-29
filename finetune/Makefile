@@ -1,7 +1,7 @@
 POETRY_HOME := ${HOME}/.local/bin
 export PATH := ${POETRY_HOME}:$(PATH)
 
-.PHONY: help install ensure-poetry install-poetry install-precommits install-kernel test
+.PHONY: help install ensure-poetry install-poetry install-precommits install-kernel jupyter test
 
 help:
 	@echo "Relevant targets are 'install' and 'test'."
@@ -30,6 +30,10 @@ install-precommits:
 
 install-kernel:
 	@poetry run ipython kernel install --user --name=scratchpad-finetune
+
+jupyter:
+	@echo "Assuming Jupyter lab is installed and configured globally."
+	@jupyter lab
 
 test:
 	@poetry run pytest --cov=src --cov-report term-missing
