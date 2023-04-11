@@ -11,7 +11,7 @@ packages = [{include = "finetune", from = "src"}]
 repository = "https://github.com/levon003/scratchpad.git"
 
 [tool.poetry.dependencies]
-python = ">=3.10"
+python = ">=3.8.15"
 jupyter = "^1.0.0"
 numpy = "^1.24.2"
 torch = "^2.0.0"

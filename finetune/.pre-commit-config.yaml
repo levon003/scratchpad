@@ -23,9 +23,9 @@ repos:
     rev: 23.3.0
     hooks:
     -   id: black
-        language_version: python3.9
+        language_version: python3.8
 -   repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.6.4
+    rev: 1.7.0
     hooks:
     -   id: nbqa-black
     -   id: nbqa-pyupgrade
