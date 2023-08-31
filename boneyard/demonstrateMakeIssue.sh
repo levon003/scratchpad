@@ -3,7 +3,7 @@ if [ -d ~/makeTest ]; then
     rm -r ~/makeTest ;
 fi
 mkdir ~/makeTest
-cd ~/makeTest
+cd ~/makeTest || exit
 mkdir bin
 echo "#!/bin/bash
 echo Hello world!" > bin/install.sh
